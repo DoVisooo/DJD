@@ -1,6 +1,6 @@
 using System;
 
-namespace Loot2
+namespace Loot
 {
     class Program
     {
@@ -11,26 +11,28 @@ namespace Loot2
             int dropRate = r.Next(101);
             int dropRate2 = r.Next(101);
 
-            if (dropRate <= 61)
+            if (dropRate < 61)
             {
                 Console.WriteLine("You dropped a common item.");
-            } else if (dropRate > 61 && dropRate <= 91)
+            }
+            else if (dropRate > 61 && dropRate < 91)
             {
                 Console.WriteLine("You dropped an uncommon item.");
-            } else if (dropRate >= 101)
+            }
+            else if (dropRate > 91)
             {
                 Console.WriteLine("You dropped a rare item.");
             }
 
-            if (dropRate2 <= 61)
+            if (dropRate2 < 61)
             {
                 Console.WriteLine("You dropped a common item.");
             }
-            else if (dropRate2 > 61 && dropRate2 <= 91)
+            else if (dropRate2 > 61 && dropRate2 < 91)
             {
                 Console.WriteLine("You dropped an uncommon item.");
             }
-            else if (dropRate2 >= 101)
+            else if (dropRate2 > 91)
             {
                 Console.WriteLine("You dropped a rare item.");
             }
