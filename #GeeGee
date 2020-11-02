@@ -1,0 +1,16 @@
+using System;
+using System.Data.Common;
+
+namespace GeeGee
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int hp = 100;
+            int dmg = 100;
+
+            Console.WriteLine(hp - dmg + "\ngg");
+        }
+    }
+}
