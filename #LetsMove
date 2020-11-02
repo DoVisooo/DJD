@@ -1,0 +1,33 @@
+using System;
+
+namespace LetsMove
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            
+            int posX = 0;
+            int posY = 0;
+
+            int cx = r.Next(1000);
+            int cy = r.Next(1000);
+
+            for (int x = posX; x <= cx; x++)
+            {
+                Console.WriteLine("\nX: " + x + "\nY: " + posY);
+            }
+
+            for (int y = posY; y <= cy; y++)
+            {
+                Console.WriteLine("\nX: " + cx + "\nY: " + y);
+            }
+
+            if (posX == cx && posY == cy)
+            {
+                Console.WriteLine("\nCharacter reached it's destination!");
+            }
+        }
+    }
+}
