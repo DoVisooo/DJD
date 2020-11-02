@@ -1,0 +1,17 @@
+using System;
+
+namespace LetsGetPumped
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+
+            double atkPower = r.Next(50, 150);
+            double pwrUp = atkPower + (atkPower * 0.5);
+
+            Console.WriteLine("Character's Attack Power: " + atkPower + "\nCharacter's Attack with Power Up: " + pwrUp);
+        }
+    }
+}
