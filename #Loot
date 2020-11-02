@@ -1,6 +1,6 @@
 using System;
 
-namespace Loot
+namespace Loot2
 {
     class Program
     {
