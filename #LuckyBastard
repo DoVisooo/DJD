@@ -1,0 +1,30 @@
+using System;
+
+namespace LuckyBastard
+{
+    class Program
+    {
+        static Random r = new Random();
+        static void Main(string[] args)
+        {
+            int health = 100;
+
+            int atk1 = r.Next(1, 49);
+            health -= atk1;
+            Console.WriteLine("You took {0} damage", atk1);
+
+            int atk2 = r.Next(1, atk1);
+            health -= atk2;
+            Console.WriteLine("You took {0} damage", atk2);
+
+            int atk3 = 99 - (atk1 + atk2);
+            health -= atk3;
+            Console.WriteLine("You took {0} damage", atk3);
+
+            if (health == 1)
+            {
+                Console.WriteLine("Lucky!");
+            }
+        }
+    }
+}
