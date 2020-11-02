@@ -6,7 +6,7 @@ namespace LetTheGamesBegin
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Game Started\nGame Playing\nGame Over");
+            Console.WriteLine("Game Started!\nGame Playing!\nGame Over!");
         }
     }
 }
