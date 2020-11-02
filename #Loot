@@ -1,0 +1,39 @@
+using System;
+
+namespace Loot2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+
+            int dropRate = r.Next(101);
+            int dropRate2 = r.Next(101);
+
+            if (dropRate <= 61)
+            {
+                Console.WriteLine("You dropped a common item.");
+            } else if (dropRate > 61 && dropRate <= 91)
+            {
+                Console.WriteLine("You dropped an uncommon item.");
+            } else if (dropRate >= 101)
+            {
+                Console.WriteLine("You dropped a rare item.");
+            }
+
+            if (dropRate2 <= 61)
+            {
+                Console.WriteLine("You dropped a common item.");
+            }
+            else if (dropRate2 > 61 && dropRate2 <= 91)
+            {
+                Console.WriteLine("You dropped an uncommon item.");
+            }
+            else if (dropRate2 >= 101)
+            {
+                Console.WriteLine("You dropped a rare item.");
+            }
+        }
+    }
+}
