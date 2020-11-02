@@ -1,0 +1,20 @@
+using System;
+
+namespace ForAzeroth
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nickname = "DoViso"; // This line represents the name of the player
+            string race = "Goblin"; // This line represents the race of the player
+            string gender = "Male"; // This line represents the gender of the player
+            string faction = "Horde"; // This line represents the faction of the player
+            string classe = "Warrior"; // This line represents the class of the player
+
+            int level = 80; // This line represents the level of the player
+
+            Console.WriteLine("Nickname: " + nickname + "\nLevel: " + level + "\nRace: " + race + "\nGender: " + gender + "\nFaction: " + faction + "\nClass: " + classe); // This line prints the result
+        }
+    }
+}
