@@ -1,0 +1,14 @@
+using System;
+
+namespace EasyPeasy
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string lives = "three";
+
+            Console.WriteLine("You have " + lives + " lives, use them wisely.");
+        }
+    }
+}
