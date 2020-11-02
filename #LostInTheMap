@@ -1,0 +1,36 @@
+using System;
+
+namespace LostInTheMap
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+
+            int x = r.Next(501);
+            int y = r.Next(501);
+
+            string posX = "";
+            string posY = "";
+
+            if (y <= 251)
+            {
+                posY = "Top";
+            } else
+            {
+                posY = "Bottom";
+            }
+
+            if (x <= 251)
+            {
+                posX = "Left";
+            } else
+            {
+                posX = "Right";
+            }
+
+            Console.WriteLine("The character is on the " + posY + "-" + posX + " side of the map." + "\nY: " + y + "\nX: " + x);
+        }
+    }
+}
