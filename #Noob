@@ -1,0 +1,14 @@
+using System;
+
+namespace Noob
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nick = "DoViso";
+
+            Console.WriteLine("You’re such a Noob " + nick + "! It's always good to have newbies around here!");
+        }
+    }
+}
