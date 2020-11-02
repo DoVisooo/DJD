@@ -1,0 +1,26 @@
+using System;
+
+namespace Vegito
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+
+            float ch1Atk = r.Next(25, 100);
+            float ch1Def = r.Next(25, 100);
+            float ch1Int = r.Next(25, 100);
+
+            float ch2Atk = r.Next(25, 100);
+            float ch2Def = r.Next(25, 100);
+            float ch2Int = r.Next(25, 100);
+
+            float avgAtk = (ch1Atk + ch2Atk) / 2;
+            float avgDef = (ch1Def + ch2Def) / 2;
+            float avgInt = (ch1Int + ch2Int) / 2;
+
+            Console.WriteLine("Character 1:" + "\nAtk: " + ch1Atk + "\nDef: " + ch1Def + "\nInt: " + ch1Int + "\n " + "\nCharacter 2:" + "\nAtk: " + ch2Atk + "\nDef: " + ch2Def + "\nInt: " + ch2Int + "\n" + "\nAverage Characters Stats:" + "\nAtk: " + avgAtk + "\nDef: " + avgDef + "\nInt: " + avgInt);
+        }
+    }
+}
