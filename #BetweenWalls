@@ -1,0 +1,29 @@
+using System;
+
+namespace BetweenWalls
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+
+            int n1 = r.Next(1, 100);
+            int n2 = r.Next(1, 100);
+
+            if (n1 > n2)
+            {
+                for (int i = n2; i <= n1; i++)
+                {
+                    Console.WriteLine(i);
+                }
+            } else
+            {
+                for (int i = n1; i <= n2; i++)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+    }
+}
