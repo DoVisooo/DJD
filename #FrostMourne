@@ -1,0 +1,21 @@
+using System;
+
+namespace FrostMourne
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name = "Dark Edge of Insanity";
+            string rarity = "Epic";
+            string description = "Dark Edge of Insanity is a two-handed axe that had the highest melee DPS in the game at the time of its release. It was surpassed in DPS only by Might of Menethil and the Corrupted Ashbringer before Burning Crusade. The eye embedded within the axe blinks at you.";
+            string tClass = "Warrior";
+            string thWeapon = "Two-Handed Weapon";
+
+            int minDmg = 242;
+            int maxDmg = 364;
+
+            Console.WriteLine("Name: " + name + "\nRarity: " + rarity + "\nDamage: " + minDmg + " - " + maxDmg + "\nDescription: " + description + "\nTarget Class: " + tClass + "\nType: " + thWeapon);
+        }
+    }
+}
