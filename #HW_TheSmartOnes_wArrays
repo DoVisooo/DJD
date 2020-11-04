@@ -1,0 +1,31 @@
+using System;
+
+namespace TheSmartOnes_WithArrays
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int n = 20;
+            int[] students = new int[n];
+            int higher = 0;
+
+            for (int i =0; i < n; i++)
+            {
+                students[i] = r.Next(21);
+
+                if (students[i] >= 15)
+                {
+                    Console.WriteLine(students[i]);
+                }
+
+                if (higher <= students[i])
+                {
+                    higher = students[i];
+                }
+            }
+            Console.WriteLine("The highest average is: " + higher);
+        }
+    }
+}
