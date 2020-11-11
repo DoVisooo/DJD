@@ -1,0 +1,91 @@
+using System;
+
+namespace AliAlwaysWins
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+
+            int p1HP = 100;
+            int p1Atk1 = r.Next(1, 11);
+            int p1Atk2 = r.Next(1, 11);
+            bool p1Turn = true;
+
+            int p2HP = 100;
+            int p2Atk1 = r.Next(1, 11);
+            int p2Atk2 = r.Next(1, 11);
+            bool p2Turn = false;
+
+            while(p1HP > 0 || p2HP > 0)
+            {
+                int AtkOrBlk = r.Next(1, 4);
+
+                if(p1Turn = true && AtkOrBlk == 1)
+                {
+                    p2HP -= p1Atk1;
+                    Console.WriteLine("\nPlayer 1 dealt " + p1Atk1 + " damage.");
+                    p1Turn = false;
+                    p2Turn = true;
+
+                    if(p2HP <= 0)
+                    {
+                        Console.WriteLine("\nPlayer 1 won!");
+                        break;
+                    }
+                } else if (p1Turn = true && AtkOrBlk == 2)
+                {
+                    p2HP -= p1Atk2;
+                    Console.WriteLine("\nPlayer 1 dealt " + p1Atk2 + " damage.");
+                    p1Turn = false;
+                    p2Turn = true;
+
+                    if (p2HP <= 0)
+                    {
+                        Console.WriteLine("\nPlayer 1 won!");
+                        break;
+                    }
+                } else if (p1Turn = true && AtkOrBlk == 3)
+                {
+                    Console.WriteLine("\nPlayer 1 attack blocked.");
+                    p1Turn = false;
+                    p2Turn = true;
+                }
+
+                if (p2Turn = true && AtkOrBlk == 1)
+                {
+                    p1HP -= p2Atk1;
+                    Console.WriteLine("\nPlayer 2 dealt " + p2Atk1 + " damage.");
+                    p2Turn = false;
+                    p1Turn = true;
+
+                    if (p1HP <= 0)
+                    {
+                        Console.WriteLine("\nPlayer 1 won!");
+                        break;
+                    }
+                }
+                else if (p2Turn = true && AtkOrBlk == 2)
+                {
+                    p1HP -= p2Atk2;
+                    Console.WriteLine("\nPlayer 2 dealt " + p2Atk2 + " damage.");
+                    p2Turn = false;
+                    p1Turn = true;
+
+                    if (p1HP <= 0)
+                    {
+                        Console.WriteLine("\nPlayer 1 won!");
+                        break;
+                    }
+                }
+                else if (p2Turn = true && AtkOrBlk == 3)
+                {
+                    Console.WriteLine("\nPlayer 2 attack blocked.");
+                    p2Turn = false;
+                    p1Turn = true;
+                }
+            }
+        }
+    }
+}
