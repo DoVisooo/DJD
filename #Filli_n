@@ -49,7 +49,7 @@ namespace Fill_In
                 Console.WriteLine(c[i]);
             }
 
-            Console.WriteLine("\nd) Fibonacci Sequence");
+            Console.WriteLine("\nd) Fibonacci Sequence:");
             for (int i = 2; i < d.Length; i++)
             {
                 d[i] = d[i - 1] + d[i - 2];
