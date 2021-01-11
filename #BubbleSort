@@ -1,0 +1,32 @@
+using System;
+
+namespace BubbleSort
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] a = { 10, 5, 4, 1, 2, 11 };
+
+            int higher;
+
+            for(int i = 0; i < a.Length - 1; i++)
+            {
+                for(int j = i + 1; j < a.Length; j++)
+                {
+                    if (a[i] > a[j])
+                    {
+                        higher = a[i];
+                        a[i] = a[j];
+                        a[j] = higher;
+                    }
+                }
+            }
+
+            foreach (int value in a)
+            {
+                Console.WriteLine(value + " ");
+            }
+        }
+    }
+}
